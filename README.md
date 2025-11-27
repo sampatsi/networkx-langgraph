@@ -245,7 +245,7 @@ This is a learning resource. Feel free to:
 
 - Open an issue
 - Connect on LinkedIn
-- Email: [your email]
+
 
 ---
 
