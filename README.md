@@ -227,7 +227,7 @@ See **Learning_PROMPTS.md** for detailed prompts to explore this project.
 
 - **NetworkX Docs:** https://networkx.org/
 - **LangGraph Docs:** https://langchain-ai.github.io/langgraph/
-- **Blog Post:** [Link to your LinkedIn article]
+- **Blog Post:** https://www.linkedin.com/posts/sivakumar-sampathkumar-91505516_networkx-langgraph-save-500k-on-agent-activity-7399811325851246592-Uk14?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAM12-EBl8j9F-FZTQ3d5di5JIAe97p6D0M
 
 ---
 
