@@ -1,0 +1,78 @@
+{
+  "bottleneck_node": "quality_check",
+  "bottleneck_score": 0.4464285714285714,
+  "betweenness_centrality": {
+    "input": 0.0,
+    "intent_classifier": 0.3571428571428571,
+    "context_enricher": 0.375,
+    "billing_agent": 0.0,
+    "technical_agent": 0.0,
+    "account_agent": 0.17857142857142855,
+    "response_formatter": 0.125,
+    "quality_check": 0.4464285714285714,
+    "output": 0.0
+  },
+  "critical_paths": [
+    {
+      "path": [
+        "input",
+        "intent_classifier",
+        "context_enricher",
+        "technical_agent",
+        "quality_check",
+        "response_formatter",
+        "output"
+      ],
+      "time_ms": 3610,
+      "cost": 0.026
+    },
+    {
+      "path": [
+        "input",
+        "intent_classifier",
+        "context_enricher",
+        "billing_agent",
+        "quality_check",
+        "response_formatter",
+        "output"
+      ],
+      "time_ms": 3110,
+      "cost": 0.021
+    },
+    {
+      "path": [
+        "input",
+        "intent_classifier",
+        "context_enricher",
+        "account_agent",
+        "quality_check",
+        "response_formatter",
+        "output"
+      ],
+      "time_ms": 2810,
+      "cost": 0.018000000000000002
+    }
+  ],
+  "optimization_opportunities": [
+    {
+      "scenario": "Add caching (80% hit rate)",
+      "time_multiplier": 0.2,
+      "cost_multiplier": 0.2
+    },
+    {
+      "scenario": "Add caching (50% hit rate)",
+      "time_multiplier": 0.5,
+      "cost_multiplier": 0.5
+    },
+    {
+      "scenario": "Optimize prompt",
+      "time_multiplier": 0.7,
+      "cost_multiplier": 0.7
+    },
+    {
+      "scenario": "Use faster model",
+      "time_multiplier": 0.8,
+      "cost_multiplier": 0.6
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "baseline": {
+    "avg_cost_per_request": 0.021666666666666667,
+    "min_cost": 0.018000000000000002,
+    "max_cost": 0.026
+  },
+  "scale_projections": {
+    "Small (10K req/month)": {
+      "monthly_requests": 10000,
+      "monthly_cost": 216.66666666666669,
+      "annual_cost": 2600.0
+    },
+    "Medium (100K req/month)": {
+      "monthly_requests": 100000,
+      "monthly_cost": 2166.6666666666665,
+      "annual_cost": 26000.0
+    },
+    "Large (1M req/month)": {
+      "monthly_requests": 1000000,
+      "monthly_cost": 21666.666666666668,
+      "annual_cost": 260000.0
+    },
+    "Enterprise (10M req/month)": {
+      "monthly_requests": 10000000,
+      "monthly_cost": 216666.6666666667,
+      "annual_cost": 2600000.0
+    }
+  },
+  "node_costs": [
+    {
+      "node": "technical_agent",
+      "cost": 0.02,
+      "paths_pct": 33.33333333333333,
+      "contribution": 0.006666666666666666,
+      "pct_total": 30.769230769230766
+    },
+    {
+      "node": "billing_agent",
+      "cost": 0.015,
+      "paths_pct": 33.33333333333333,
+      "contribution": 0.004999999999999999,
+      "pct_total": 23.076923076923073
+    },
+    {
+      "node": "account_agent",
+      "cost": 0.012,
+      "paths_pct": 33.33333333333333,
+      "contribution": 0.004,
+      "pct_total": 18.461538461538463
+    },
+    {
+      "node": "quality_check",
+      "cost": 0.003,
+      "paths_pct": 100.0,
+      "contribution": 0.003,
+      "pct_total": 13.846153846153847
+    },
+    {
+      "node": "intent_classifier",
+      "cost": 0.002,
+      "paths_pct": 100.0,
+      "contribution": 0.002,
+      "pct_total": 9.230769230769232
+    },
+    {
+      "node": "response_formatter",
+      "cost": 0.001,
+      "paths_pct": 100.0,
+      "contribution": 0.001,
+      "pct_total": 4.615384615384616
+    }
+  ],
+  "optimization_target": {
+    "node": "technical_agent",
+    "current_cost": 0.02,
+    "potential_savings_pct": 15.384615384615389
+  }
+}

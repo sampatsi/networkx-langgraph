@@ -1,0 +1,163 @@
+{
+  "nodes": {
+    "input": {
+      "type": "entry",
+      "description": "User query input",
+      "cost_per_call": 0.0,
+      "avg_time_ms": 5,
+      "llm_model": null
+    },
+    "intent_classifier": {
+      "type": "classifier",
+      "description": "Classify user intent (billing, technical, account)",
+      "cost_per_call": 0.002,
+      "avg_time_ms": 800,
+      "llm_model": "gpt-4-mini",
+      "token_count": 150
+    },
+    "context_enricher": {
+      "type": "enricher",
+      "description": "Fetch user context from DB",
+      "cost_per_call": 0.0,
+      "avg_time_ms": 200,
+      "llm_model": null
+    },
+    "billing_agent": {
+      "type": "specialist",
+      "description": "Handle billing queries",
+      "cost_per_call": 0.015,
+      "avg_time_ms": 1500,
+      "llm_model": "gpt-4",
+      "token_count": 1000
+    },
+    "technical_agent": {
+      "type": "specialist",
+      "description": "Handle technical support",
+      "cost_per_call": 0.02,
+      "avg_time_ms": 2000,
+      "llm_model": "gpt-4",
+      "token_count": 1300
+    },
+    "account_agent": {
+      "type": "specialist",
+      "description": "Handle account management",
+      "cost_per_call": 0.012,
+      "avg_time_ms": 1200,
+      "llm_model": "gpt-4",
+      "token_count": 800
+    },
+    "response_formatter": {
+      "type": "formatter",
+      "description": "Format final response",
+      "cost_per_call": 0.001,
+      "avg_time_ms": 100,
+      "llm_model": "gpt-4-mini",
+      "token_count": 50
+    },
+    "quality_check": {
+      "type": "validator",
+      "description": "Validate response quality",
+      "cost_per_call": 0.003,
+      "avg_time_ms": 500,
+      "llm_model": "gpt-4-mini",
+      "token_count": 200
+    },
+    "output": {
+      "type": "exit",
+      "description": "Final output to user",
+      "cost_per_call": 0.0,
+      "avg_time_ms": 5,
+      "llm_model": null
+    }
+  },
+  "edges": [
+    [
+      "input",
+      "intent_classifier",
+      {
+        "weight": 1.0,
+        "probability": 1.0
+      }
+    ],
+    [
+      "intent_classifier",
+      "context_enricher",
+      {
+        "weight": 1.0,
+        "probability": 1.0
+      }
+    ],
+    [
+      "context_enricher",
+      "billing_agent",
+      {
+        "weight": 0.4,
+        "probability": 0.4
+      }
+    ],
+    [
+      "context_enricher",
+      "technical_agent",
+      {
+        "weight": 0.35,
+        "probability": 0.35
+      }
+    ],
+    [
+      "context_enricher",
+      "account_agent",
+      {
+        "weight": 0.25,
+        "probability": 0.25
+      }
+    ],
+    [
+      "billing_agent",
+      "quality_check",
+      {
+        "weight": 1.0,
+        "probability": 1.0
+      }
+    ],
+    [
+      "technical_agent",
+      "quality_check",
+      {
+        "weight": 1.0,
+        "probability": 1.0
+      }
+    ],
+    [
+      "account_agent",
+      "quality_check",
+      {
+        "weight": 1.0,
+        "probability": 1.0
+      }
+    ],
+    [
+      "response_formatter",
+      "output",
+      {
+        "weight": 1.0,
+        "probability": 1.0
+      }
+    ],
+    [
+      "quality_check",
+      "response_formatter",
+      {
+        "weight": 0.95,
+        "probability": 0.95
+      }
+    ],
+    [
+      "quality_check",
+      "intent_classifier",
+      {
+        "weight": 0.05,
+        "probability": 0.05
+      }
+    ]
+  ]
+}
