@@ -178,7 +178,7 @@ This demo shows the exact process that achieved:
 
 ## 🔍 Cursor AI Exploration Prompts
 
-See **CURSOR_PROMPTS.md** for detailed prompts to explore this project with Cursor AI.
+See **Learning_PROMPTS.md** for detailed prompts to explore this project.
 
 ---
 

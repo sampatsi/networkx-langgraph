@@ -38,7 +38,7 @@ You asked for:
 - Troubleshooting
 - Learning path
 
-**[CURSOR_PROMPTS.md](computer:///mnt/user-data/outputs/networkx_langgraph_demo/CURSOR_PROMPTS.md)**
+**[Learning_PROMPTS.md](computer:///mnt/user-data/outputs/networkx_langgraph_demo/Learning_PROMPTS.md)**
 - 50+ ready-to-use Cursor prompts
 - Getting started prompts
 - Deep dive prompts
@@ -142,7 +142,7 @@ Explain how to take this demo to production:
 3. What infrastructure is required?
 ```
 
-**See CURSOR_PROMPTS.md for 50+ more!**
+**See Learning_PROMPTS.md for 50+ more!**
 
 ---
 
@@ -392,7 +392,7 @@ All files are in: `/mnt/user-data/outputs/`
 - [networkx_langgraph_demo.tar.gz](computer:///mnt/user-data/outputs/networkx_langgraph_demo.tar.gz) - Archive
 - [networkx_langgraph_demo/](computer:///mnt/user-data/outputs/networkx_langgraph_demo/) - Directory
 - [PROJECT_GUIDE.md](computer:///mnt/user-data/outputs/PROJECT_GUIDE.md) - Guide
-- [CURSOR_PROMPTS.md](computer:///mnt/user-data/outputs/networkx_langgraph_demo/CURSOR_PROMPTS.md) - Prompts
+- [Learning_PROMPTS.md](computer:///mnt/user-data/outputs/networkx_langgraph_demo/Learning_PROMPTS.md) - Prompts
 
 **Also available:**
 - LinkedIn posts (comprehensive + short)
@@ -425,7 +425,7 @@ All files are in: `/mnt/user-data/outputs/`
 1. **Download** [networkx_langgraph_demo.tar.gz](computer:///mnt/user-data/outputs/networkx_langgraph_demo.tar.gz)
 2. **Read** [PROJECT_GUIDE.md](computer:///mnt/user-data/outputs/PROJECT_GUIDE.md)
 3. **Run** Phase 1 scripts
-4. **Explore** with [Cursor prompts](computer:///mnt/user-data/outputs/networkx_langgraph_demo/CURSOR_PROMPTS.md)
+4. **Explore** with [Learning prompts](computer:///mnt/user-data/outputs/networkx_langgraph_demo/Learning_PROMPTS.md)
 
 **You've got this!** 🎯
 

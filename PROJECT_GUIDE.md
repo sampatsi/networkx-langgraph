@@ -29,7 +29,7 @@ This is a **real, working example** that demonstrates:
 networkx_langgraph_demo/
 ├── README.md                    # Project overview
 ├── requirements.txt             # Python dependencies
-├── CURSOR_PROMPTS.md           # 50+ ready-to-use Cursor prompts
+├── Learning_PROMPTS.md         # 50+ ready-to-use learning prompts
 │
 ├── phase1_networkx_design/     # Design Phase (NetworkX)
 │   ├── 01_workflow_design.py           ✅ Create workflow graph
@@ -136,7 +136,7 @@ Then wait for my next question.
 
 ### 50+ Additional Prompts
 
-See **CURSOR_PROMPTS.md** for prompts covering:
+See **Learning_PROMPTS.md** for prompts covering:
 - Deep dives into each phase
 - Debugging techniques  
 - Custom workflow creation
@@ -422,7 +422,7 @@ pip install langgraph --upgrade
 **Best for:** Deep understanding
 
 1. Open project in VS Code with Cursor
-2. Use prompts from CURSOR_PROMPTS.md
+2. Use prompts from Learning_PROMPTS.md
 3. Ask questions about specific code
 4. Iterate and learn
 
@@ -469,7 +469,7 @@ pip install langgraph --upgrade
 
 ### Getting Started
 - Start with README.md in the project
-- Use CURSOR_PROMPTS.md for guided exploration
+- Use Learning_PROMPTS.md for guided exploration
 - Run the scripts in order
 
 ### Deep Dives
@@ -490,7 +490,7 @@ Before you start:
 - [ ] Extract the archive
 - [ ] Install dependencies
 - [ ] Read README.md
-- [ ] Review CURSOR_PROMPTS.md
+- [ ] Review Learning_PROMPTS.md
 
 Phase 1 (NetworkX):
 - [ ] Run 01_workflow_design.py
